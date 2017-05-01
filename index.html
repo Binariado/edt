@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	   <title>Mathayus</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="css/estilos.css" >
+       <link rel="stylesheet" href="font/font_icon/style.css">
+       <link rel="stylesheet" type="text/css" href="css/menu.css">
+   </head>
+   
+   <body  onload="teditor()" onbeforeunload="anchosventanas()" onkeydown="Control_()" onresize="mover(this)" onmouseleave="mvconsole(),mover(this)"  onmouseup="mvconsole(),mover(this)" onmousemove="editfun(this),mvconsole(),mover(this)" >
+       
+
+       <div id="capaar">
+
+         <div id="archivos">
+         <h3>Main folders</h3>
+         <p id="c1">        	
+         <!--</p>
+         <p id="c2"> solo para prueba
+         </p>
+         <p id="fi">         	
+         </p>
+         <button onclick="actualizar()">Actualizar</button>                           
+                          
+             <input  type="checkbox" id="menu-bar">
+             <label class="icon-menu" for="menu-bar">back</label>-->
+             <p id="cs">             	
+             </p> 
+
+            <button onclick="Abrir()" type="button" name="Abrir" >Abrir</button> 
+            <button onclick="verificar()">verificar</button> 
+            <!--<input type="text" id="indicador" name="indicador">
+<header>-->
+  <nav  role="banner" class="nav" role="navigation">
+    <ul onclick="elemento(event);" id="main_folders" class="main_dir">
+
+    </ul>
+  </nav>
+<!--</header>  -->                 
+            <nav   class="list-menu">
+               <ul  id="directorio-main">
+
+
+               </ul>    
+            </nav>          
+
+         </div>
+
+         <div id="tamanio"  onmousedown="mover(this)" onmouseup="mover(this)">        	
+         </div>
+       </div>
+       
+       <div id="vent">
+         <div id="ventana">pest<p id="c4">
+         	
+         </div>
+       </div>
+
+       <div id="conteditor">
+         <!-- <div id="subcontedi" >-->
+              <textarea id="numlinea" disabled>            	
+              </textarea>
+              <script type="text/javascript" >document.getElementById("numlinea").value=1;</script>
+              <!--<div id="capaeditor">-->
+           	
+                <textarea onmousedown="Cursorposition(this)" onclick="Cursorposition(this)" onkeydown="Cursorposition(this);editfun(this)" onkeypress="Cursorposition(this);editfun(this)" onkeyup="Cursorposition(this);editfun(this)" onscroll="editfun(this)" id="editor"></textarea>
+                <div id="receptor" class="receptor">
+                </div>                   
+                <!--<input id="editor" ></input>-->
+             <!-- </div> -->                           
+         <!-- </div>-->   
+       </div>
+       
+      <div id="capamenu">
+         <div id="menu">
+         	<!--<nav class="menu_inferi">
+         		<ul>
+         			<li><a>Linea</a></li>
+         			<li><a>Columna</a></li>
+         			<li><a>Ultima linea</a></li>
+         			<li><a>Consola</a></li>
+         		</ul>
+         	</nav>-->
+         	
+         	<p id="c5" class="menu_infe">Linea , Columna, ultima linea</p>
+         	<p class="menu_inferi" title="console">Consola</p>
+         </div>
+      </div>
+
+        <div onmousedown="mvconsole()" onmouseup="mvconsole()" id="lineconsole"></div>
+        <textarea id="console" >root@VESTRUM:~/#</textarea>      	
+      	
+
+
+        <!-- <div id="chat">chat</div>--> 
+     <script type="text/javascript" src="js/move.js"></script>
+     <script type="text/javascript" src="js/archivo.js"></script>   
+     <script type="text/javascript" src="js/stilos/stilos.js"></script>
+   </body>
+
+</html>

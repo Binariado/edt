@@ -1,0 +1,19 @@
+{
+  "name": "Mthayus",
+  "version": "0.0.1",
+  "description": "Procesador de texto",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^1.4.2",
+    "express": "4.14.0",
+    "nodemon": "1.10.2",
+    "socket.io":"1.4.8",
+    "mongodb": "2.2.10",
+    "mongoose": "4.6.3",
+    "ftp": "0.3.10",
+    "jsftp": "1.5.4"
+  }
+}

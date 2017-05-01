@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html, body{
+  height:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #1b1b1b;  
+}
+input,textarea{outline:none;}
+
+#receptor,#lineconsole,#console,#archivos,#capamenu,#editor,#capaeditor,#tamanio,#numlinea,#capalinea,#conteditor,#subcontedi,#capaar,#vent,#chat {
+  float:left;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+#lineconsole,#console,#capaar,#vent,#conteditor,#capamenu{
+   display: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+.azul:focus {box-shadow: 0 0 5px rgba(0,0,255,1);border:1px solid rgba(0,0,255,0.8);}
+.rojo:focus {box-shadow: 0 0 5px rgba(255,0,0,1);border:1px solid rgba(255,0,0,0.8);}
+.naranja:focus {box-shadow: 0 0 5px rgba(230,95,0,1);border:1px solid rgba(230,95,0,0.8);}
+.verde:focus {box-shadow: 0 0 5px rgba(0,255,0,1);border:1px solid rgba(0,255,0,0.8);}

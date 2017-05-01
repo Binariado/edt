@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+
+
+
+
+a { text-decoration: none; }
+
+/**
+ * Hidden fallback
+ */
+
+
+/**
+ * Styling navigation
+ 
+
+header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  margin-top:0px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}*/
+input[type=checkbox]{
+    display: none;
+}
+.menu_infe{
+position: absolute;
+float: left;
+}
+.menu_inferi{
+position: relative;
+float: right;
+right: 8px;
+height:20px;
+cursor:default;
+}
+.menu_inferi:hover{
+background:#252525;
+border: 1px;
+border-color:#131313; 
+}
+
+#menu-bar:checked ~ .list-menu{
+ transform: translateX(0%);
+  z-index: 0;
+}
+
+
+/**
+ * Styling top level items
+ */
+
+.nav a, .nav label {
+ display: block;
+ padding: .20rem;
+ height: 14px;
+ padding-left: .60rem;
+  color: white;
+  font-size: 14px;
+  background-color: transparent;
+ /*  box-shadow: inset 0 -1px #1d1d1d;*/
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover {
+  color: rgba(255, 255, 255, 0.5);
+   background: #030303;
+}
+
+.nav label { cursor: pointer; }
+
+/**
+ * Styling first level lists items
+ */
+
+.group-list a, .group-list label {
+  padding-left: 1.5rem;
+ /* background: #252525;
+  box-shadow: inset 0 -1px #373737;*/
+}
+
+.group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: #030303; }
+/*a:focus,  a:hover, . label:focus,  label:hover { background: #030303; }
+/**
+ * Styling second level list items
+ */
+
+.sub-group-list a, .sub-group-list label {
+  padding-left: 2rem;
+ /* background: #353535;
+  box-shadow: inset 0 -1px #474747;*/
+}
+
+
+/*.sub-group-list a:focus, .sub-group-list a:hover, .sub-group-list label:focus, .sub-group-list label:hover { background: #030303; }
+
+/**
+ * Styling third level list items
+ */
+
+.sub-sub-group-list a, .sub-sub-group-list label {
+  padding-left: 2.5rem;
+ /* background: #454545;
+  box-shadow: inset 0 -1px #575757;*/
+}
+
+/*.sub-sub-group-list a:focus, .sub-sub-group-list a:hover, .sub-sub-group-list label:focus, .sub-sub-group-list label:hover { background: #030303; }
+
+/**
+ * Hide nested lists
+ */
+
+.group-list, .sub-group-list, .sub-sub-group-list {
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .2s ease-in-out;
+  transition: max-height .2s ease-in-out;
+}
+.main_dir label[data-to_list-true=""] + ul {
+   max-height: 100%;
+}
+
+/**
+ * Rotating chevron icon
+ */
+.icon-folder{
+  position: absolute;
+}
+
+ .main_dir label[data-to_list-true=""] > .icon-folder:before {
+  content: "\e930";
+}
+
+
+.mr{
+  float: left;
+}
+.mr{
+  float: left;
+}
+label > span {
+  margin-right: 10px;
+  float: left;
+  -webkit-transition: -webkit-transform .45s ease;
+  transition: transform .45s ease;
+}
+
+.main_dir label[data-to_list-true=""] > .dir_list{
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+
+
+
